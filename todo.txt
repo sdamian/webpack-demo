@@ -1,0 +1,22 @@
+• Npm i webpack webpack-cli
+• Entry point
+• Output
+• Modules
+    ○ https://www.npmjs.com/package/lorem-ipsum
+    ○ From browserify to webpack
+• Loaders
+    ○ Css-loader
+    ○ Style-loader
+    ○ Images with file-loader
+• Devtool
+• Webpack dev server
+    ○ webpack-dev-server
+• Plugins
+    ○ Html
+    ○ Css extract
+    ○ Uglify/terser, closure compiler
+    ○ Copy
+    ○ Npm install
+• Code splitting
+
+Future: module federation
