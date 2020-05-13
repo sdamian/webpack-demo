@@ -1,20 +1,18 @@
 import { LoremIpsum } from "lorem-ipsum";
-import './style.css';
+import './style.css'
+//require('./style.css');
 
-const element = document.createElement('div');
-document.body.appendChild(element);
+const app = document.createElement('div');
+document.body.appendChild(app);
 
-console.log('hello world');
+const lorem = new LoremIpsum();
+app.innerHTML = lorem.generateParagraphs(20);
 
-const lorem = new LoremIpsum({
-    sentencesPerParagraph: {
-        max: 8,
-        min: 4
-    },
-    wordsPerSentence: {
-        max: 16,
-        min: 4
-    }
-});
+const css = require('!!css-loader!./style.css');//.toString(); 
+// const css = require('!!to-string-loader!css-loader!./style.css');
+// file-loader, raw-loader
+console.log(css)
 
-element.innerHTML = lorem.generateWords(500);
+// const script = document.createElement('stylez');
+// script.innerHTML = css;
+// document.head.appendChild(script);
