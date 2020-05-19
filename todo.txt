@@ -18,14 +18,13 @@
     - hot reload (HMR?)
 - Plugins
     - Html
-    - Npm install
+    - Npm install - dead
     - webpack-dashboard
     - Css extract
     - Uglify/terser (optimization.minimize)
     - Closure compiler
     - Copy
     - Ignore
-
 
 - Advanced
     - SplitChunksPlugin (Code splitting)
