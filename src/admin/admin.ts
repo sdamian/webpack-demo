@@ -1,22 +1,13 @@
 import * as angular from 'angular';
-import { LoremIpsum } from "lorem-ipsum";
-
-class HelloWorldComponent {
-    name = '';
-    lorem = new LoremIpsum();
-
-    get message() {
-        return `Hello ${this.name ?? "world"}! ${this.lorem.generateParagraphs(1)}`;
-    }
-}
+import { HelloWorldComponent } from './hello.component';
 
 const module = angular.module('admin', [])
     .component('app', {
-        template: '<hello name="angular"></hello>'
+        template: require('./app.component.html')
     })
     .component('hello', {
         controller: HelloWorldComponent,
-        template: '<h2>~{{$ctrl.message}}~</h2>',
+        template: require('./hello.component.html'),
         bindings: {
             name: '@'
         }

@@ -16,6 +16,7 @@
   "dependencies": {
     "@types/angular": "^1.7.0",
     "angular": "^1.7.9",
+    "html-loader": "^1.1.0",
     "lorem-ipsum": "^2.0.3",
     "rimraf": "^3.0.2",
     "to-string-loader": "^1.1.6",

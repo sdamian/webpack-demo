@@ -13,6 +13,10 @@ module.exports = {
     module: {
         rules: [
             {
+                test: /\.html?$/i,
+                use: ['html-loader']
+            },
+            {
                 test: /\.css$/i,
                 use: ['style-loader', 'css-loader'],
             },
@@ -54,6 +58,10 @@ module.exports = {
             `
         }),
     ],
+    resolve: {
+        // Add `.ts` as a resolvable extension so we can require 'stuff' instead of 'stuff.ts'
+        extensions: [".ts", ".js"]
+    },
     optimization: {
         splitChunks: {
             cacheGroups: {
