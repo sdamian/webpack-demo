@@ -1,34 +1,15 @@
-- Npm i webpack webpack-cli
-- Entry point
-- Output
-- Modules
-    - https://www.npmjs.com/package/lorem-ipsum
-    - From browserify to webpack
-- Devtool
-- Loaders
-    - Css-loader
-    - Style-loader
-    - Images with file-loader -> url-loader with limit
-    - c++ loader???
-    - null-loader
-    - raw-loader
-    - babel and typescript
+* Angular JS the old fashion way
+    * template syntax (two way binding by default)
+    * modules (dependencies - https://github.com/cgross/angular-busy)
+    * controllers ("controller as" syntax vs $scope vs components)
+    * services (factories, providers)
+    * directives
+    * dependency injection (MyController.$inject = [])
+    * components ()
+* Angular JS with components
+* Advanced stuff
+    * directives?
+    * digest cycle
 
-- webpack-dev-server
-    - hot reload (HMR?)
-- Plugins
-    - Html
-    - Npm install - dead
-    - webpack-dashboard
-    - Css extract
-    - Uglify/terser (optimization.minimize)
-    - Closure compiler
-    - Copy
-    - Ignore
-
-- Advanced
-    - SplitChunksPlugin (Code splitting)
-    - expose-loader
-    - vendor chunks, tree shaking (sideEffects, module concatenation)
-
-Future: module federation
+npm run server
+open http://localhost:8080/admin.html
